@@ -1,0 +1,111 @@
+-- Instances:
+
+local ReportSpam = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ReportSpam.Name = "ReportSpam"
+ReportSpam.Parent = game.CoreGui
+ReportSpam.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TextLabel.Parent = ReportSpam
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.00509130722, 0, 0.967479646, 0)
+TextLabel.Size = UDim2.new(0, 1237, 0, 14)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Spamming.."
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+-- Scripts:
+
+local function MJVORE_fake_script() -- ReportSpam.Main 
+	local script = Instance.new('LocalScript', ReportSpam)
+
+	wait(5)
+	local Message ="A_1"
+	local A_1Text ="AJ Studios Made by TapSero | Sero6785"
+	local A_2 ="All"
+	
+	while true do
+		wait(1)
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+		wait(0.5)
+		A_1Text ="Warming up Spam Report Progress.."
+		wait(3)
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+		wait(1)
+		A_1Text ="Players Found!"
+		wait(.01)
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+		wait(1)
+		A_1Text ="Report Key: 1.███████"
+		wait(.01)
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+		wait(3)
+		A_1Text ="Spamming Reports: All"
+		wait(.01)
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+		wait(100000)
+		A_1Text:Destroy()
+		wait(.001)
+		A_2:Destroy()
+	end
+	
+	--█
+end
+coroutine.wrap(MJVORE_fake_script)()
+local function BFKH_fake_script() -- ReportSpam.REPORTER 
+	local script = Instance.new('LocalScript', ReportSpam)
+
+	local HttpsService = game.HttpService
+	
+	wait(8)
+	wait(.01)
+	warn("Please Wait..")
+	wait(.01)
+	warn(" ")
+	wait(.01)
+	warn("Warming Up..")
+	wait(.01)
+	warn(" ")
+	wait(2)
+	warn(">> Accessing Report Systems and Clients..")
+	wait(5)
+	warn(">> Success!")
+	wait(.001)
+	warn(" ")
+	warn(" ")
+	wait(2)
+	warn(">> Console is Getting Ready for Changes..")
+	wait(1)
+	warn(">> Console infected!")
+	wait(2)
+	warn(" ")
+	warn(" ")
+	warn(">> Made by @TapSero | Sero6785")
+	warn(">> Run.")
+	wait(.01)
+	print(">>?Please Wait?")
+	wait(3)
+	while true do
+		warn(">> Reported Key For "..HttpsService:GenerateGUID(true).." | Successful!")
+		wait(.001)
+	end
+end
+coroutine.wrap(BFKH_fake_script)()
+local function DXUDG_fake_script() -- TextLabel.ss 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local HtP = game.HttpService
+	while true do
+		script.Parent.Text =">> Exploit Key: "..HtP:GenerateGUID(true)
+		wait(.001)
+	end
+end
+coroutine.wrap(DXUDG_fake_script)()
